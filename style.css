@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+:root{
+    --success-color:#7cbd1e;
+    --error-color:  #fd0054;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif,'open sans';
+    min-height: 100vh;
+}
+h2{
+    margin: 0 0 30px;
+    text-align: center;
+}
+.container{
+    background-color: #fd8604;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+.form{
+    padding: 20px 40px;
+    
+    
+}
+.formcontrol{
+    padding-bottom:2px;
+    margin-bottom: 2px;
+    position: relative;
+    
+}
+.formcontrol label{
+    display: block;
+    font-family: 'open san',sans-serif;
+    font-size: 18px;
+ 
+}
+.formcontrol input{
+    background-color: #f0f0f0;
+    border-radius: 2px;
+    border-color:#f0f0f0 ;
+    padding: 8px;
+    font-size: 15px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    outline: 0;
+    border: none;
+    width: 100%;
+    box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.3);
+    
+}
+.formcontrol input:focus{
+    outline:0 ;
+    border-color: sandybrown;
+}
+.formcontrol.success input{
+    border-color:var(--success-color) ;
+
+}
+.formcontrol.error input{
+    border-color: var(--error-color);
+}
+.formcontrol small{
+    border-color: var(--error-color);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.formcontrol.error small{ 
+    visibility: visible;
+
+}
+.form button:hover{
+    cursor: pointer;
+    background-color: #ffc93c;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+}
+ .form button{
+     background-color: white;
+    width: 100%;
+     padding:10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-color:#ffc93c ;
+
+     font-family: sans-serif;
+     font-size: 19px;
+     font-weight: 500;
+     transition: all 0.5s ease-in-out;
+     background-color: #de7119;
+     
+ }
+  .form button:active{
+   background-color: #9C5518;
+  }
+  .form button:focus{
+      outline: 0;
+  }
